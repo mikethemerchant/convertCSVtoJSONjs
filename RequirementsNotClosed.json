@@ -1,0 +1,450 @@
+[
+  {
+    "ID": "7746",
+    "Title": "Scrap rate and ABC group research",
+    "Description": "Client would like to use ABC value code to determine variable scrap for items.    MCA Help desk ticket: <a href=\"https://mcaadvantage.mcaconnect.com/support/edit-case/?id=c36ffc08-5455-ed11-bba3-0022480ae8a3\">mca202217355· Customer Self-Service (mcaconnect.com)</a>   ",
+    "Repo": "AX_2009",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "7747",
+    "Title": "DPAS flow down to Purchase order AX 2009",
+    "Description": "BKV need similar functionality as was developed in D365 to flow down the contract and rating from the sales order to the purchase order and production orders.FDD and detailed testing instructions attached.",
+    "Repo": "AX_2009",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13086",
+    "Title": "RPT-025B add planned work order as a option",
+    "Description": "Need you help – see below screen shot – need to add to below selections when running open work order report RPT-025B We didn’t need the option of chosen Planned work orders but in some cases now we are trying to let the system plan work orders based on sales orders",
+    "Repo": "AX_2009",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13271",
+    "Title": "Project using Microsoft Automate for NDAs execution",
+    "Description": "I was told to reach out to work with your team because I need help in leading a project using Microsoft Automate for NDAs execution.We setup Microsoft Automate for PO approval process and it be ideal for NDA execution for each of the site Supply Chain Leaders to use that would flow to Michael A. for execution.Current Process:1) Supply chain member will send out Spartronics NDA to supplier.2) Supplier will approve or redline NDA.3) Legal will review redlined document for approval4) VP supply chain all also approves. 5) Once approved supply chain person files on SharePoint.6) Supply chain person will add a record of the \"NDA Tracker\" (attached).We would like to create a workflow to automate 3 to 6 steps.Spreadsheet could be removed if we had all the information in a different format / location.1 to 3 automations would be a nice to have.One of the drivers is missing the emailed NDA in VPs inboxBackgroundCurrent power app in not in much use due to low number of purchase orders over 100k and Mike S refusal to use app.Current tool developed by Jeff Lau - Synergy Technology with John Cole (IT) and Sander VanSickle (Supply chain)www.synergy-technical.com",
+    "Repo": "AX_2009",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13288",
+    "Title": "Sales report with pegging - Request 16300",
+    "Description": "New report with following columns:  Open Sales order report RPT-???  Customer Name - Text description from customer master.Sales Order - Sales order numberSales Order Delivery line number / Schedule line numberCustomerPart Number - Top level assembly part number from sales orderDescription - of the top-level assemblyQTY - Sales order qtShipped - qty shipped of that line (not in sales order report)Balance - qty remaining on sales order line.Unit Price - price of the top-level assembly part on that sales orderProduction order and Planned order - production order to fulfill the sales order line (not in sales order report)on SSRS reportSales order line X what production orders, qty, start date, end date ,fulfill that demandSimilar to this Today each top-level item is looked up net requirements.We are looking for a change to existing or new report.",
+    "Repo": "AX_2009",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13289",
+    "Title": "AX - Production order Create Update",
+    "Description": "<div style=\"box-sizing:border-box;outline:0px;\"><font face=\"Arial, Verdana\"><span style=\"font-size:13px;\">BKV site is asking to be able to</span></font><span><font face=\"Arial, Verdana\"><span style=\"font-size:13px;\">be maintainingdates and quantities on the sales orders, purchase orders, production orders. (focusingproduction order first as we try to get existing purchase order updater from VTN)</span></font></span> <div style=\"box-sizing:border-box;outline:0px;\"><span><font face=\"Arial, Verdana\"><span style=\"font-size:13px;\"></span></font></span> <div style=\"box-sizing:border-box;outline:0px;\"><span><font face=\"Arial, Verdana\"><span style=\"font-size:13px;color:rgb(17, 17, 17);font-family:Arial, Verdana;display:inline !important;\">VTN ask is to configure/create and Atlas uploader (or any tool) to<span></span></span><span style=\"box-sizing:border-box;\"><b style=\"color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">create and be able to </b><font><span style=\"font-size:13px;\"><b>update</b></span></font><b style=\"color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">order quantity, start date, end date on production orders.</b></span><b>(Mightbe locked at table</b></font></span><span><font face=\"Arial, Verdana\"><b>level)</b></font></span> <div style=\"box-sizing:border-box;outline:0px;\"><span><font face=\"Arial, Verdana\"><span style=\"font-size:13px;\"><b style=\"box-sizing:border-box;color:rgb(17, 17, 17);font-family:Arial, Verdana;\"></b></span></font></span> <div style=\"box-sizing:border-box;outline:0px;\"><span><font face=\"Arial, Verdana\"><span style=\"font-size:13px;\"><b style=\"box-sizing:border-box;color:rgb(17, 17, 17);font-family:Arial, Verdana;\">Not RAF or ended.</b></span></font></span> <div style=\"box-sizing:border-box;outline:0px;\"><span><font face=\"Arial, Verdana\"><span style=\"font-size:13px;\"><b style=\"box-sizing:border-box;color:rgb(17, 17, 17);font-family:Arial, Verdana;\"></b></span></font></span> <div style=\"box-sizing:border-box;outline:0px;\"><span><font face=\"Arial, Verdana\"><span style=\"font-size:13px;\"><b style=\"box-sizing:border-box;color:rgb(17, 17, 17);font-family:Arial, Verdana;\"><span style=\"font-weight:400;display:inline !important;\">Production order quantity, start date, end date. ( see attached ) BKV</span></b></span></font></span> <div style=\"box-sizing:border-box;outline:0px;\"><span><font face=\"Arial, Verdana\"><span style=\"font-size:13px;\"></span></font></span> <div style=\"box-sizing:border-box;outline:0px;\"><span><font face=\"Arial, Verdana\"><font><span style=\"font-size:13px;color:rgb(0, 0, 0);\">BKV would like Line dates and quantities and </span></font><span style=\"font-size:13px;color:rgb(0, 0, 0);\">delivery</span><font><span style=\"font-size:13px;color:rgb(0, 0, 0);\">schedule data for sales orders and purchase orders.</span></font></font></span> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">This will have significant labor savings compared to manual updates.<br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\"><br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">VTN currently has and uploader/updater for purchase orders.<br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\"><br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">An Phan has knowledge of Atlas but is having trouble with the production order update; AX is not letting him change the dates with Atlas.",
+    "Repo": "AX_2009",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13315",
+    "Title": "POWER BI for VTN",
+    "Description": "<div style=\"margin:0px 0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"color:rgb(0, 52, 113);font-family:Roboto;font-size:11pt;font-weight:inherit;\">VTNdeveloping the BI report for working capital and supply chain overview. I needa way to get data automatically for the following reports:</span><span></span>AP aging - Atlas AR Aging Report - Vietnam - Co. 41, 42, 43 Template - Atlas Atlas. Inventory transactions - Physical date CO41 2023.04.16 - Atlas Billing Report Co.41 2023.04.16 - AX Customer details Co.41 2023.04.16 - AX Finished items in process Co.41 2023.04.16 - AX In Process production costing Co.41 2023.04.16 - AX Item details Co.41 2023.04.16 - Atlas Open PO data 2023.04.16 - Atlas RPT-009 Open Sales Orders Co.41 2023.04.16 - SSRS  RPT-028a Inventory Value With Aging CO.41 2023.04.16 - SSRS  Trial Balance Co.41 2023.04.16 - AX Vendor Details Co.41 2023.04.16 - AX Voucher transaction Co.41 2023.04.16 - AX WO Co.41 2023.04.16 - AX RPT-012 Shipment Report - SSRS  RPT-028a Inventory Value With Aging - SSRS  RPT-008 Work Order Shorts - SSRS  Net Requirement - Atlas <span></span> <p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"font-family:Roboto;color:#003471;\">Solution options;</span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"font-family:Roboto;color:#003471;\"></span> </p><ol style=\"margin-bottom:0in;margin-top:0in;\" start=1 type=1><li style=\"margin:0in 0in 0in 0.5in;font-size:11pt;font-family:Calibri, sans-serif;color:#003471;margin-left:0in;\"><span style=\"font-family:Roboto;\">Modify/setup reports to automatically run daily/weekly and save them into a network location.</span> </li><li style=\"margin:0in 0in 0in 0.5in;font-size:11pt;font-family:Calibri, sans-serif;color:#003471;margin-left:0in;\"><span style=\"font-family:Roboto;\">Createthe database view of AX company 41,42,43 for me that equal the same data as in the list of reports.</span> </li><li style=\"margin:0in 0in 0in 0.5in;font-size:11pt;font-family:Calibri, sans-serif;color:#003471;margin-left:0in;\"><span style=\"font-family:Roboto;\">Giveme access sandbox of AX database + sandbox report, I create the report bymyself in the test environment. Mike will apply in the Productionenvironment after validation.</span> </li> </ol><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"font-family:Roboto;color:#003471;\"></span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"font-family:Roboto;color:#003471;\"></span><b style=\"font-size:11pt;\"><span style=\"font-family:Roboto;color:#003471;\">An Phan</span></b> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;line-height:150%;\"><span style=\"font-size:9.0pt;font-family:Roboto;color:#003471;\">SENIOR ITMANAGER</span> </p>",
+    "Repo": "AX_2009",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13316",
+    "Title": "AX - Production order Create Update",
+    "Description": "<div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">VTN site has new customer that is going to require data entry of 2000 production orders and then will be maintaining dates on the orders.<br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\"><br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">The ask is to configure/create and Atlas uploader to create and be able to update: order quantity, start date, end date.<br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\"><br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">This will have significant labor savings compared to manual updates.<br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\"><br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">VTN currently has and uploader/updater for purchase orders.<br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\"><br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">An Phan has knowledge of Atlas but is having trouble with the production order update; AX is not letting him change the dates with Atlas.",
+    "Repo": "AX_2009",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "7756",
+    "Title": "Need View of OOR Data, but not the whole page",
+    "Description": "From: Kevin BI guy  Customer request  Have open order.",
+    "Repo": "inonet",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "7761",
+    "Title": "Fill Shortage Page - Not able to view and check out assets from shortage page",
+    "Description": "<div style=\"box-sizing:border-box;margin-right:-15px;margin-left:-15px;color:rgb(112, 112, 112);font-family:Montserrat, sans-serif;\"><div style=\"box-sizing:border-box;min-height:1px;padding-right:15px;padding-left:15px;float:left;\"><span style=\"color:rgb(0, 0, 0);\">I expected to be able to view a list of assets from the shortages page and then be able to check them out when completing the request. </span> <span style=\"color:rgb(0, 0, 0);\"> </span> <div style=\"box-sizing:border-box;margin-right:-15px;margin-left:-15px;color:rgb(112, 112, 112);font-family:Montserrat, sans-serif;\"><div style=\"box-sizing:border-box;min-height:1px;padding-right:15px;padding-left:15px;float:left;text-align:right;\"><label style=\"box-sizing:border-box;display:inline-block;max-width:100%;margin-bottom:5px;font-weight:700;\"><span style=\"color:rgb(0, 0, 0);\">Actual Behavior</span></label><span style=\"color:rgb(0, 0, 0);\"> </span> <div style=\"box-sizing:border-box;min-height:1px;padding-right:15px;padding-left:15px;float:left;\"><span style=\"color:rgb(0, 0, 0);\">It does not exist, there is no option to select the assets. Doing this would improve the effectiveness of getting assets out to the production floor. </span> <span style=\"color:rgb(0, 0, 0);\"> </span>",
+    "Repo": "inonet",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13119",
+    "Title": "Working on source control",
+    "Description": "",
+    "Repo": "inonet",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13272",
+    "Title": "Inonet Sales Order Dashboard - Upload Tool Missing Manufacturer and MPN",
+    "Description": "<div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">Currently, the upload tool on the Sales Order Dashboard does not upload manufacturer or MPN to the sales order. This causes the user to manually enter that info for each sales order line.<br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\"><br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">Manufacturer and MPN columns will need to be added to the upload template. <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\"><a href=\"https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=14407\">(1) #14407, Inonet Sales Order Dashboard - Upload Tool Missing Manufacturer and MPN (spartronics.com)</a>",
+    "Repo": "inonet",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13273",
+    "Title": "Inonet error message - QMS upload file - #14316",
+    "Description": "<a href=\"https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=14316\">(1) #14316, Inonet error message (spartronics.com)</a>",
+    "Repo": "inonet",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13247",
+    "Title": "Sales order double entry Inonet read only",
+    "Description": "",
+    "Repo": "inonet",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "5103",
+    "Title": "RMA move message",
+    "Description": "<p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\">So when boards are moved into certain buckets, like Holdand DM Cart, the folks on this mailing list get an email with the explanationas to why. For normal production orders, the assembly number isself-explanatory, and I can move or delete emails for boards that aren’t for mycustomers. </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\">But for RMAs, we need the decoder ring from WIPTracking. <b>R122357</b> = </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><div style=\"margin:0px 0in;font-size:11pt;font-family:Calibri, sans-serif;\"><img src=\"https://tfs.primus-tech.com/Primus/0854d62c-3219-469b-b55e-9ab44920fd39/_apis/wit/attachments/f84e8085-4066-4633-83cd-0d03cc69a058?fileName=image.png\" alt=Image> <p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\">Would it be possible to add the part number of the itemnext to the shop order in the automated emails? Like this: </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;text-indent:.5in;\">1 of <b><span style=\"color:red;\">R122357/ R06710</span></b> moved from B1 FQA to B1 HOLD by DENISE BONDY becauseNEED PICK TICKET &amp; SERIAL CERT OVER RIDE, DB 10/27/20. </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\">I ask because today Denise moved three RMA shop ordersinto hold because she’s waiting for the pick ticket (marketing) and the serialcert override (engineering). She normally does email a reminder to theengineer with this request. In this case, all three boards were for SAFTso I don’t do those overrides anymore. </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\">But say this was one of mine and Denise forgot to sendthe reminder. It would sit there longer than it needs to. </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\">Thank You, </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\">Richard Wojtaszek </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\">x278 or (570) 321-6278 </p>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "5175",
+    "Title": "QinetiQ Document Automation",
+    "Description": "<span>I would like to discuss the possibility of having someone work on a project for one of our customers (QinetiQ). Currently we hand fill all forms and we are seeing a higher than acceptable non-conformance rate in both Test and IPQA/FQA where the majority of the documentation completion is being completed. </span> The project would be similar to the “MOOG Docs” program that we have used for test documentation in the past. What would you, or whomever would be working on the project, need to review the potential for designing the program? The customer does have specific forms that they require us to use, I have attached samples of them for you to review.   We actually have several assemblies that I would like to set this up for. So far there are a total of 4 assemblies, but there are an additional 5 assemblies that I would like to include as part of the project. Of the attached forms you will see all are typically the same from assembly to assembly with the exception of Appendix F. The only difference to the forms is the customer has their test procedure listed at the bottom of each page. <p style=\"margin:0in 0in 0.0001pt;font-size:11pt;font-family:Calibri, sans-serif;\">This project is not customer approved yet, but I would liketo get information around to present to them for review andconsideration. They in turn would need to get acceptance from theircustomer before we could fully move forward with the project. </p><p style=\"margin:0in 0in 0.0001pt;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><p style=\"margin:0in 0in 0.0001pt;font-size:11pt;font-family:Calibri, sans-serif;\">Please let me know what questions you have or any additionalinformation you would need to bring this project in to realization. </p> <span></span>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "5512",
+    "Title": "RMA Status of Scrapped",
+    "Description": "If an RMA is scrapped, it should have a test status of such.  Form: RMA Daily Receiving Log Right of Tag ID and detail line; status should read &quot;Scrapped&quot;",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "5551",
+    "Title": "Update barcode reading on SignOffSystem",
+    "Description": "badges will have a Proposed barcode for Paylocity's Employee ID. This barcode will no longer use the lkp_users time_clock. Sign off system should accommodate this change.  All barcodes are eight characters long with prepending zeros to the ID.",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "5577",
+    "Title": "Update ReportPrinter to have non-static email addresses",
+    "Description": "Emails are currently static compiled into source. Convert this to use database entry with column for window sheets",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "5597",
+    "Title": "Check JSow parser for files showing on X: drive",
+    "Description": "<p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\">Take a look into this when you get a chance. Not a hugedeal, but could be an annoyance eventually with the amount of MDB files thatwill show up on X root. </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><b>From:</b> Mcdermott, John&lt;<a href=\"mailto:john.mcdermott@spartronics.com\">john.mcdermott@spartronics.com</a>&gt;<b>Sent:</b> Monday, October 25, 2021 10:49 AM<b>To:</b> Schlachter, Andrew &lt;<a href=\"mailto:Andrew.Schlachter@spartronics.com\">Andrew.Schlachter@spartronics.com</a>&gt;<b>Cc:</b> Kromis, Mark &lt;<a href=\"mailto:mark.kromis@spartronics.com\">mark.kromis@spartronics.com</a>&gt;<b>Subject:</b> RE: MDB files on X: root </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"color:#1F497D;\">Andrew,</span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"color:#1F497D;\"></span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"color:#1F497D;\">I don’t know why they areshowing up there. I run the JSOW Parser from:</span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;margin-left:.5in;\"><span style=\"color:#1F497D;\">X:\\Development\\EndUser\\Uzzolino\\JSOWParser\\JSOWParser.exe</span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"color:#1F497D;\"></span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"color:#1F497D;\">The data I am transferring goesinto here for parsing and is deleted when the parser completes:</span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;margin-left:.5in;\"><span style=\"color:#1F497D;\">P:\\COMPANYACCESS\\MANUFACTURING\\RAYTHEONJSOW\\ToParse</span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"color:#1F497D;\"></span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><b><span style=\"font-size:12.0pt;font-family:Roboto;color:#003471;\">John McDermott</span></b><span style=\"font-size:12.0pt;font-family:Roboto;color:#003471;\"></span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"font-size:9.0pt;font-family:Roboto;color:#003471;\">TEST ENGINEER</span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"font-size:9.0pt;font-family:Roboto;color:#003471;\"><img width=73 height=7 style=\"width:.76in;\"></span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"font-size:9.0pt;font-family:Roboto;color:#353535;\">Office:570-326-6591 Ext. 143</span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"font-size:9.0pt;font-family:Roboto;color:#353535;\">2333Reach RoadWilliamsport, PA17701</span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><b><u><span style=\"font-size:9.0pt;font-family:Roboto;color:#9C9C9C;\"></span></u></b> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><a href=\"https://nam11.safelinks.protection.outlook.com/?url=https:%2f%2fwww.spartronics.com%2f&amp;data=04%7c01%7cmark.kromis%40spartronics.com%7c2bbb9d08ccfa45a38ce108d999808101%7cb83322d10ee6407b8d7f8c78ee3a4e06%7c0%7c0%7c637709599468961010%7cUnknown%7cTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7c1000&amp;sdata=PK2Ill%2fr3ANGayzFhUt0w7itvKKPjKQZJkqlsoJ5o%2BE%3D&amp;reserved=0\"><span style=\"font-family:Roboto;color:blue;\"><img width=138 height=17 style=\"width:1.437in;\"></span></a><b><u><span style=\"font-size:16.0pt;font-family:Roboto;color:#9C9C9C;\"></span></u></b> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"font-family:Roboto;color:black;\"></span><span style=\"color:#2F5496;\"></span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span style=\"color:#1F497D;\"></span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><b>From:</b> Schlachter, Andrew <b>Sent:</b> Monday, October 25, 2021 10:01 AM<b>To:</b> Mcdermott, John &lt;<a href=\"mailto:john.mcdermott@spartronics.com\">john.mcdermott@spartronics.com</a>&gt;<b>Cc:</b> Kromis, Mark &lt;<a href=\"mailto:mark.kromis@spartronics.com\">mark.kromis@spartronics.com</a>&gt;<b>Subject:</b> MDB files on X: root </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\">Hi John,We noticed you’ve been writing MDB files to the X: drive root path since 10/20.Is there a better place those files can be put on the network? X: drive is notfor end users to write to. </p>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "5661",
+    "Title": "CFE Database add contract to power search",
+    "Description": "From<span>Jim Haughwout</span>  Please make Power Search include Contract#. Example: Power Search on 7C0091 would bring up assets with Contract# N0003087C0091 or at least make Contract# a searchable field. Thanks!  <a href=\"https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=17467\">https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=17467</a> ",
+    "Repo": "CfeDatabase",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "5812",
+    "Title": "Software Development Request Test Matrix/CFE Usage",
+    "Description": "<span>Management is looking for a way to marry the CFE database with the Test Matrix, with Macola to determine the last time a certain piece of equipment has been used. We would need to take in consideration if there are any A#'s currently in inventory and the last Macola transaction date of a particular A# on a CON. There are items that are CFE that are not test equipment. There is no guarantee the CFE database will contain the A# the CFE is used on. This may present a challenge. Spoke with Mike Bender so he is aware of what we are looking for.</span>  <span></span> <span>Reference</span><span>tickets</span> <span><ul><li><a href=\"https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=19473\" style=\"\">Spartronics Williamsport IT Support Helpdesk - Ticket 19473 Details (primus-tech.com)</a> </li> </ul></span> <ul><li><a href=\"https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=18442\">Spartronics Williamsport IT Support Helpdesk - Ticket 18442 Details (primus-tech.com)</a> </li><li><a href=\"https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=18020\">Spartronics Williamsport IT Support Helpdesk - Ticket 18020 Details (primus-tech.com)</a> </li> </ul> <span></span>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "5829",
+    "Title": "CFE Add Item number",
+    "Description": "<p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span>Would it be possible to open a field in the CFE database for A#’s attached to the CFE. Currently, there is no defined field for associating the products a CFE is tied to or used on. This would enable us to better track usage of items when we develop software to integrate with MRP. It would also help us now when we do manual lookups. Not all CFEs are test equipment related. Some CFE are tools used for manufacturing purposes so the Test Matrix is not a good tool for this purpose.</span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span></span> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"><span><img src=\"https://dev.azure.com/Spartronics/d3635d32-60cf-4ce3-81b9-091acf783be8/_apis/wit/attachments/df10fb94-06d8-4cb3-8428-29627a13c4b5?fileName=image.png\" alt=Image></span> </p>",
+    "Repo": "CfeDatabase",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "5868",
+    "Title": "CFE Database--Make Program entry menu only",
+    "Description": "<a href=\"https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=18283\">https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=18283</a>  The Add Equipment feature is allowing typed in Program names. It should only allow menu choices. Example: CFEL00915. Program choice should have been &quot;GOODRICH, VT&quot; from the menu. Instead, the USER creating the record apparently typed in &quot;GR-VT PB REQUIRED&quot; . From the A-number entered in DESCRIPTION, our TEST MATRIX confirms my suspicion that the Program is indeed &quot;GOODRICH, VT&quot;. There is little harm done, but it fowls up queries when our Collins customer rep requests a list of all Collins assets. Normal procedure is to list all programs containing the string &quot;GOODRICH&quot; but this skips CFEL00915. I suggest also adding a pop-up message stating &quot;If none of the menu choices are appropriate, contact the customer rep for the program and get a new program name. Then IT will add that program to the menu.&quot; Please, at least disallow typed-in Programs. That should not be a difficult fix, and if we still have software support, I know we can tackle more difficult tasks. Thanks! Maybe this is no longer an issue? I haven't tried to type in a Program when I add a CFE.",
+    "Repo": "CfeDatabase",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6130",
+    "Title": "Open DMRScreen - Add production column",
+    "Description": "FromChris Terpak  Need a column added that shows when a part is needed for production. This can be similar to the date printed on the RII traveler.   <a href=\"https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=18431\">Spartronics Williamsport IT Support Helpdesk - Ticket 18431 Details (primus-tech.com)</a> ",
+    "Repo": "DMRSystem",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6131",
+    "Title": "Add Program manager to dmr distribution",
+    "Description": "<span>FromChris Terpak</span> <span></span> <span>DMR System </span> Add Program Manager to email distribution.   Program Manager should be be added to the email automatically when submitting a DMR.  <span></span> <a href=\"https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=18430\">https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=18430</a> ",
+    "Repo": "DMRSystem",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6135",
+    "Title": "CFE Database add field for A-numbers",
+    "Description": "<div style=\"box-sizing:border-box;\">From Jim Haughwout (<span style=\"box-sizing:border-box;font-size:8.5pt;font-family:Arial, sans-serif;color:black;\"><a href=\"https://nam11.safelinks.protection.outlook.com/?url=https:%2f%2fsupport.primus-tech.com%2fhelpdesk%2fWebObjects%2fHelpdesk.woa%2fwa%2fTicketActions%2fview?ticket%3D18442&amp;data=05%7c01%7cmark.kromis%40spartronics.com%7c9e337f60a99e44ce5f4708da2def7c32%7cb83322d10ee6407b8d7f8c78ee3a4e06%7c0%7c0%7c637872803849912396%7cUnknown%7cTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7c3000%7c%7c%7c&amp;sdata=zN4XKgZU41FQD%2f9pfB2lg1e9BywJ5CAxo3Em7Pgs2YM%3D&amp;reserved=0\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">18442</a>)</span> <div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:8.5pt;font-family:Arial, sans-serif;color:black;\"><br style=\"box-sizing:border-box;\"></span> <div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:8.5pt;font-family:Arial, sans-serif;color:black;\">This may be the same Ticket #18020, but I couldn't pull it up. Due to Management's desire to move out unutilized CFE equipment, we need to search CFE records by A-number (and use something else to determine last order). The CFE database designer Robert Uzzolino did not have this need when he coded it. Practice has been to sometimes put an A-number in Description or Comments field. Now it is required with every new CFE record to list the A-numbers. This can be 12 or more A-numbers, [see attachments] and they crowd out other helpful info. We need a dedicated field, perhaps named &quot;Used for (A-numbers):&quot; Also, please add another row of visibility to COMMENTS. Thanks<br style=\"box-sizing:border-box;\"></span> <div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:8.5pt;font-family:Arial, sans-serif;color:black;\"><br style=\"box-sizing:border-box;\"></span> <div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:8.5pt;font-family:Arial, sans-serif;color:black;\"><img src=\"https://dev.azure.com/Spartronics/d3635d32-60cf-4ce3-81b9-091acf783be8/_apis/wit/attachments/c69bf59a-21e3-45c9-bf09-b91279fe6665?fileName=image.png\" alt=Image style=\"box-sizing:border-box;max-width:100%;align-self:center;\"><br style=\"box-sizing:border-box;\"></span> <div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:8.5pt;font-family:Arial, sans-serif;color:black;\"><br style=\"box-sizing:border-box;\"></span> <div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:8.5pt;font-family:Arial, sans-serif;color:black;\"><img src=\"https://dev.azure.com/Spartronics/d3635d32-60cf-4ce3-81b9-091acf783be8/_apis/wit/attachments/99014068-6d43-4ff3-b5a6-ca85fc0611f6?fileName=image.png\" alt=Image style=\"box-sizing:border-box;max-width:100%;align-self:center;\">:<br style=\"box-sizing:border-box;\"></span> <div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:8.5pt;font-family:Arial, sans-serif;color:black;\"><br style=\"box-sizing:border-box;\"></span> <div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;font-size:8.5pt;font-family:Arial, sans-serif;color:black;\"><img src=\"https://dev.azure.com/Spartronics/d3635d32-60cf-4ce3-81b9-091acf783be8/_apis/wit/attachments/ba71bbbf-3830-48f5-9525-dbc33e916b8e?fileName=image.png\" alt=Image style=\"box-sizing:border-box;max-width:100%;align-self:center;\"></span>",
+    "Repo": "CfeDatabase",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6140",
+    "Title": "programming matrix not saving times",
+    "Description": "From Wenda Daily,  The operator and cycle times crated last year does not except time when entered.",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6219",
+    "Title": "Fix Store processor to remove parts not listed",
+    "Description": "When a item is removed from the store spreadsheet, it is not zeroed out in the ITT store in macola.  <a href=\"https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=18608\">https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=18608</a>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6242",
+    "Title": "Add a batch mode way or query to update calibration database",
+    "Description": "",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6279",
+    "Title": "Miscellaneous Shipper, unfriendly search results",
+    "Description": "Miscellaneous Shipper, unfriendly search results: I request improvement to the search capability. When I hit enter and see the list of matches, and select one, and it's not the right shipper, I have to start over with many steps to try the next row above or below the last one viewed. It doesn't even take me back to the shipper last viewed.  <a href=\"https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=18818\">https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=18818</a>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6327",
+    "Title": "FDTN Tag ID",
+    "Description": "<div style=\"font-size:15px;margin:0px;\"><p style=\"font-size:11pt;font-family:Calibri, sans-serif;margin:0px;\"><span style=\"font-size:12pt;margin:0px;color:rgb(0, 0, 0);\">FDTN, more specifically the Tag ID test status subsystem in FDTN, has a few issues I would like to address in this email to help retain as much traceability as possible when it comes to defect handling.</span><span style=\"color:rgb(0, 0, 0);\"> </span> </p><span style=\"color:rgb(0, 0, 0);\"> </span> <div style=\"font-size:15px;margin:0px;\"><p style=\"font-size:11pt;font-family:Calibri, sans-serif;margin:0px;\"><span style=\"font-size:12pt;margin:0px;color:rgb(0, 0, 0);\"></span><span style=\"color:rgb(0, 0, 0);\"> </span> </p><span style=\"color:rgb(0, 0, 0);\"> </span> <div style=\"font-size:15px;margin:0px;\"><p style=\"font-size:11pt;font-family:Calibri, sans-serif;margin:0px;\"><span style=\"font-size:12pt;margin:0px;color:rgb(0, 0, 0);\">Primarily when a tag ID is put into assignment, we are only capable of selecting one party.</span><span style=\"color:rgb(0, 0, 0);\"> </span> </p><span style=\"color:rgb(0, 0, 0);\"> </span> <div style=\"font-size:15px;margin:0px;\"><p style=\"font-size:11pt;font-family:Calibri, sans-serif;margin:0px;\"><span style=\"font-size:12pt;margin:0px;color:rgb(0, 0, 0);\">In the event we have a single assembly that has an SMT component placed on the board upside down (leads in the air) as well as a hand soldered component with unsoldered leads we are unable to accurately record the defect root causes. We would need to be able to allocate each individual defect code added to a tag ID during diagnosis to ensure SMT isn't being blamed for hand solder and vice versa.</span><span style=\"color:rgb(0, 0, 0);\"> </span> </p><span style=\"color:rgb(0, 0, 0);\"> </span> <div style=\"font-size:15px;margin:0px;\"><p style=\"font-size:11pt;font-family:Calibri, sans-serif;margin:0px;\"><span style=\"font-size:12pt;margin:0px;color:rgb(0, 0, 0);\"></span><span style=\"color:rgb(0, 0, 0);\"> </span> </p><span style=\"color:rgb(0, 0, 0);\"> </span> <div style=\"font-size:15px;margin:0px;\"><p style=\"font-size:11pt;font-family:Calibri, sans-serif;margin:0px;\"><span style=\"font-size:12pt;margin:0px;color:rgb(0, 0, 0);\">I'm not sure if the implementation of Aegis will come packing these upgrades, but to ensure defects are being accurately recorded I believe this should be added to our FDTN system, whether it be under the name Production Quality Control System or Aegis.</span> </p>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6368",
+    "Title": "Upgrade excel sheet in PrestartTools",
+    "Description": "",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6427",
+    "Title": "Backlog report detail add quantity",
+    "Description": "<div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;font-style:italic;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Background information:</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:WordVisiCarriageReturn_MSFontService, Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"></span><br style=\"margin:0px;\"></span><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Report has dollars but no quantity</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;font-style:italic;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"></span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;font-style:italic;line-height:19.425px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Development request:</span></span><span style=\"margin:0px;font-size:11pt;line-height:19.425px;font-family:WordVisiCarriageReturn_MSFontService, Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"></span><br style=\"margin:0px;\"></span><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:19.425px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Add quantity to report</span></span><span style=\"margin:0px;font-size:11pt;line-height:19.425px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6428",
+    "Title": "At Risk report past due PO",
+    "Description": "<div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;font-style:italic;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Background information:</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:WordVisiCarriageReturn_MSFontService, Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"></span><br style=\"margin:0px;\"></span><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Currently </span><span style=\"margin:0px;\">parts that </span><span style=\"margin:0px;\">show past due today don’t show as a shortage or at risk.</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:WordVisiCarriageReturn_MSFontService, Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"></span><br style=\"margin:0px;\"></span><span lang=EN-US style=\"margin:0px;font-size:11pt;font-style:italic;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Development request:</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:WordVisiCarriageReturn_MSFontService, Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"></span><br style=\"margin:0px;\"></span><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"> </span><span style=\"margin:0px;\">Change report to consider </span><span style=\"margin:0px;\">Purchase orders past due and not </span><span style=\"margin:0px;\">in house</span><span style=\"margin:0px;\"> are at risk. </span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:WordVisiCarriageReturn_MSFontService, Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"></span><br style=\"margin:0px;\"></span><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Part due today is not past due and at risk until tomorrow.</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p>",
+    "Repo": "AtRiskReports",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6429",
+    "Title": "At Risk all components",
+    "Description": "<div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;font-style:italic;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Development request:</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Details tab </span><span style=\"margin:0px;\">of each month and all details </span><span style=\"margin:0px;background-repeat:repeat-x;background-position:left bottom;border-bottom:1px solid transparent;\">tab</span><span style=\"margin:0px;\"> should show all components not just shortages.</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px 0px 0px 72px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"> </span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p>",
+    "Repo": "AtRiskReports",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6431",
+    "Title": "Create new pegging report for shop orders",
+    "Description": "<div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;font-style:italic;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">User story:</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">As a planner I need to provide a list of what shop orders are coving what top level demand.</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"> </span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;font-style:italic;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Background information:</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Steps:</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"> </span><span style=\"margin:0px;background-repeat:repeat-x;background-position:left bottom;border-bottom:1px solid transparent;\">Vlookup</span><span style=\"margin:0px;\"> the customer information</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:WordVisiCarriageReturn_MSFontService, Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"></span><br style=\"margin:0px;\"></span><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"> Start with WIP </span><span style=\"margin:0px;background-repeat:repeat-x;background-position:left bottom;border-bottom:1px solid transparent;\">report;</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"> pull OE report</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:WordVisiCarriageReturn_MSFontService, Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:WordVisiCarriageReturn_MSFontService, Calibri, Calibri_EmbeddedFont, sans-serif;\"><br style=\"margin:0px;\"></span><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:WordVisiCarriageReturn_MSFontService, Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"></span><br style=\"margin:0px;\"></span><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"> </span><span style=\"margin:0px;\">Does not include forecast orders </span><span style=\"margin:0px;\">currently.</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;font-style:italic;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Development request</span><span style=\"margin:0px;\">:</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Create new attached report.</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6434",
+    "Title": "Transfer log window sheets",
+    "Description": "<div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;font-style:italic;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">User story:</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">As a stockroom </span><span style=\"margin:0px;\">work,</span><span style=\"margin:0px;\"> I send window sheet material to the shop </span><span style=\"margin:0px;background-repeat:repeat-x;background-position:left bottom;border-bottom:1px solid transparent;\">floor</span><span style=\"margin:0px;\"> and they say it’s not there. </span><span style=\"margin:0px;\">One side says they sent it; other side says they didn’t get it.</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:WordVisiCarriageReturn_MSFontService, Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"></span><br style=\"margin:0px;\"></span><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;font-style:italic;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Background information:</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Transfer log window sheets material can't not be logged in transfer log</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;font-style:italic;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"></span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;font-style:italic;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Development request:</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">Create system that will allow window sheet material to be entered into transport log.</span><span style=\"margin:0px;\"> </span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:WordVisiCarriageReturn_MSFontService, Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"></span><br style=\"margin:0px;\"></span><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\"></span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p> <div style=\"margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p style=\"margin:0px;font-weight:normal;color:windowtext;text-align:left;\"><span lang=EN-US style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"><span style=\"margin:0px;\">&lt; </span><span style=\"margin:0px;\">talk to Chris S</span><span style=\"margin:0px;\"> – Mike &gt;</span></span><span style=\"margin:0px;font-size:11pt;line-height:18px;font-family:Calibri, Calibri_EmbeddedFont, sans-serif;\"></span> </p>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6437",
+    "Title": "WIP holds date range",
+    "Description": "<span style=\"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;\">WIP Hold Report beeasily modified to show a date range and include in/out of hold dates</span> <span style=\"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;\"></span> <span style=\"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;\">Mackay, Mark &lt;mark.mackay@spartronics.com&gt;</span>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6440",
+    "Title": "AtRisk PO past due change to problem date",
+    "Description": "<span style=\"\">Background:</span> <p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\">If a purchase order has a past due date at risk report uses<b style=\"font-size:11pt;\">today’s date adds 7 calendar dates anduses that new date.</b> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\">Then later in the vbExcel part it adds DockToStock of 5“business days” to get you to 9/26. </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\">Development request: </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\">Change this calculation to the problem date </p><p style=\"margin:0in;font-size:11pt;font-family:Calibri, sans-serif;\"> </p>",
+    "Repo": "AtRiskReports",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6450",
+    "Title": "C# version of AtRisk",
+    "Description": "",
+    "Repo": "AtRiskReports",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6451",
+    "Title": "DMR System - date auto fill",
+    "Description": "Development request: After quality engineer time clock is populated. Please have the date to the right of it auto-populate with today's date. <img src=\"https://dev.azure.com/Spartronics/d3635d32-60cf-4ce3-81b9-091acf783be8/_apis/wit/attachments/848c4cdb-6f73-4fe0-b1be-4a90a787a84b?fileName=image.png\" alt=Image> ",
+    "Repo": "DMRSystem",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6452",
+    "Title": "Test Matrix Power Search not fuzzy enough",
+    "Description": "User story: <h2><span style=\"font-family:&quot;Lucida Grande&quot;, Arial, Helvetica, sans-serif;background-color:rgb(255, 255, 217);display:inline !important;\">If the fixture number was entered with dashes, power search won't find it unless the dashes are present, but it should. I understand leaving off the GR prefix.</span> </h2><span style=\"font-family:&quot;Lucida Grande&quot;, Arial, Helvetica, sans-serif;background-color:rgb(255, 255, 217);display:inline !important;\"></span> <span style=\"font-family:&quot;Lucida Grande&quot;, Arial, Helvetica, sans-serif;background-color:rgb(255, 255, 217);display:inline !important;\"><span style=\"font-family:Arial, Helvetica, sans-serif;font-size:10px;text-align:left;display:inline !important;\">Jim Haughwout</span></span> <span style=\"font-family:&quot;Lucida Grande&quot;, Arial, Helvetica, sans-serif;background-color:rgb(255, 255, 217);display:inline !important;\"></span>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6453",
+    "Title": "SMT Reel Consolidate",
+    "Description": "SMT reels will not consolidate  <a href=\"https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=18866\">https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=18866</a> ",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6454",
+    "Title": "Oven Profile Fix",
+    "Description": "<span>when line 3 runs a profile and saves it on their computer to the line 3 KIc profiles location it is not saving under line 3 profiles. I end up finding it under the line 1 profiles location. Can you please look into this and fix it for me? A recent one that this happened to was p07277 and s07277. should be in line 3 folder but is in line 1.</span> <span></span> <span><a href=\"https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=17919\">https://support.primus-tech.com/helpdesk/WebObjects/Helpdesk.woa/wa/TicketActions/view?ticket=17919</a></span> ",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6509",
+    "Title": "DMR System buyer code name",
+    "Description": "User story: The buyer code in the buyer block is of no value to us (you just changed it back). Can you make that show a name (or partial) instead? It would be a big help.  Development request change the display of buyer code to show name on dmr main form",
+    "Repo": "DMRSystem",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6533",
+    "Title": "Update DMR Defect Code to combobox",
+    "Description": "<span style=\"font-family:Roboto, Arial;font-size:13px;display:inline !important;\">From Bill Ely,</span> <span style=\"font-family:Roboto, Arial;font-size:13px;display:inline !important;\"></span> <span style=\"font-family:Roboto, Arial;font-size:13px;display:inline !important;\">Change the [Defect] &quot;CODE&quot; from a free text field to drop-down selection field as shown in QI 8.3 Attachment 4. See attached document for guidance.</span> <span style=\"font-family:Roboto, Arial;font-size:13px;display:inline !important;\"></span> <span style=\"font-family:Roboto, Arial;font-size:13px;display:inline !important;\">See Defect Codes Attachment</span> <span style=\"font-family:Roboto, Arial;font-size:13px;display:inline !important;\"></span> <span style=\"font-family:Roboto, Arial;font-size:13px;display:inline !important;\"><a href=\"https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=5084\">https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=5084</a></span>",
+    "Repo": "DMRSystem",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6558",
+    "Title": "Dmr System - Add owner to screen",
+    "Description": "<span style=\"font-family:Roboto, Arial;font-size:13px;display:inline !important;\">Please remove/change the &quot;Buyer's Signature&quot; block and add/change it to a free text block labeled &quot;OWNER&quot; (see attached). The intent is to add a one-letter character to indicate who the DMR is assigned to.</span>",
+    "Repo": "DMRSystem",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6583",
+    "Title": "CFE Database has bug preventing entry of Contact",
+    "Description": "From Jim Haughwout  CFE Database version V2.0.12+  When adding a record, it is usually impossible to enter the Contract because the Location map overlaps the Contract field. A message pops up asking, &quot;Do you really want to move the item here?&quot; Also, please put the Contract field in tab order so the user can land on it by cycling the Tab key. Thanks  <a href=\"https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=5436\">https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=5436</a>",
+    "Repo": "CfeDatabase",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6611",
+    "Title": "Update genard parser for FLX",
+    "Description": "",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6630",
+    "Title": "Improve Paylocity Termination list for macola",
+    "Description": "",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "6636",
+    "Title": "Webbased WIP prod logs",
+    "Description": "Convert c# to web based new model  Problems:  Start and stop of many jobs requires Mutiple instances of application. It is possible to run multiple tests at the same time.  No job history if application is closed.  No edit of entered records. I left it running since yesterday...  No validation on entry of order, operation, qty.  Information on qty remaining would be helpful.  Clock time not editable. <span style=\"\"></span> <span style=\"\">Populate shop order qty at start of job; and allow edit at the end.</span>  Need ability to have one person start job and different person finish it: IE load belt, unload belt in wash.  Links to visual aids and quality alerts",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "7735",
+    "Title": "Cash Requirement Report - Macola report to excel",
+    "Description": "User story: CFO requesting that this report be provided in excel instead of PDF.  <span>Business PROCESS:</span>AP payments need to be requested and approved by CFO each week. Pull a cash requirement report ( with whatever cutoff date / often same as payment date ) <span>Send to CFO; uploaded on COR drive.</span>  Convert this report to excel: <img src=\"https://dev.azure.com/Spartronics/d3635d32-60cf-4ce3-81b9-091acf783be8/_apis/wit/attachments/0c908cdc-27af-4309-9e29-41539f5159c6?fileName=image.png\" alt=Image>  Background information on report: <h1>Cash Requirements Report </h1><p>Use the Cash Requirements Report to determine which invoices can be paid with the available cash or to determine exactly how much cash is required to bring your A/P to a certain level. </p><p>For example, the report tells you exactly how much cash would be required to pay off all invoices due up to a certain date (called the cutoff date). </p><p>One important use for this report is to help you choose a suitable cutoff date (due date through which to pay invoices) for Generalized Payment Selection. Generalized Payment Selection is part of the Payment Preparation option, which allows you to automatically select invoices for payment. The cutoff date used in Generalized Payment Selection determines how many vendor invoices are selected for payment. Running the Cash Requirements Report with a given cutoff date shows you the total cash that is required if that cutoff date is used in Generalized Payment Selection. If the total cash required is too high, the cutoff date can be moved back. If the cash required is lower than available, the cutoff date can be moved forward. </p><p>The Cash Requirements Report does the following: </p><ul><li><p>It itemizes the totals by vendor and, if you choose, it details vendor invoices as well. </p> </li><li><p>It shows any discounts available on past due and current invoices as well as discounts lost because the invoice was not paid by the discount date. </p> </li><li><p>It shows discounts now available that would be lost if the voucher is paid on the next payment date. These are shown as optional invoices. </p> </li> </ul><p>When the cash required versus the discounts gained and payments made is correctly optimized, the Generalized Payment Selection can be run, using the same cutoff date. Any needed manual adjustments to these selections can then be made, and you are ready to print checks. </p><div style=\"margin-top:14px;margin-bottom:14px;\">Form:  <div style=\"margin-top:14px;margin-bottom:14px;\"><img src=\"https://dev.azure.com/Spartronics/d3635d32-60cf-4ce3-81b9-091acf783be8/_apis/wit/attachments/6eb82fbc-b524-4083-8367-983a5e6612ce?fileName=image.png\" alt=Image> <div style=\"box-sizing:border-box;margin:0px;\">Detail report: <div style=\"box-sizing:border-box;margin:0px;\"><img src=\"https://dev.azure.com/Spartronics/d3635d32-60cf-4ce3-81b9-091acf783be8/_apis/wit/attachments/3cdd3626-be1c-4298-8176-907cecb5d56e?fileName=image.png\" alt=Image style=\"box-sizing:border-box;max-width:100%;\"><br style=\"box-sizing:border-box;\"> <div style=\"box-sizing:border-box;margin:0px;\"><br style=\"box-sizing:border-box;\"> <div style=\"box-sizing:border-box;margin:0px;\"><span style=\"display:inline !important;\">Development request:</span> <div style=\"box-sizing:border-box;margin:0px;\"> <div style=\"box-sizing:border-box;margin:0px;\"><b>Required columns:</b> <div style=\"box-sizing:border-box;margin:0px;\"> <div style=\"box-sizing:border-box;margin:0px;\"><span style=\"box-sizing:border-box;\">Vendor no</span><br style=\"box-sizing:border-box;\"> <div style=\"box-sizing:border-box;margin:0px;\">Vendor Name <div style=\"box-sizing:border-box;margin:0px;\">Terms <div style=\"box-sizing:border-box;margin:0px;\">Invoice No <div style=\"box-sizing:border-box;margin:0px;\">Voucher <div style=\"box-sizing:border-box;margin:0px;\">Inv-Date <div style=\"box-sizing:border-box;margin:0px;\">Due date <div style=\"box-sizing:border-box;margin:0px;\">past due - don't need might add <div style=\"box-sizing:border-box;margin:0px;\">current<span style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;\"></span>- don't need might add</span> <div style=\"box-sizing:border-box;margin:0px;\">net amount <div style=\"box-sizing:border-box;margin:0px;\"><b>purchase order if possible - usually 1 to 1 purchase order to invoice/voucher </b> <div style=\"box-sizing:border-box;margin:0px;\"><br style=\"box-sizing:border-box;color:rgba(255, 255, 255, 0.95);background-color:rgb(32, 31, 30);\"> <b>Parameter for cutoff date that trims the records by due date.</b>  Solution: <span style=\"display:inline !important;\">SSRS report; saved as excel.</span>  Ticket: <a href=\"https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=10093&amp;PORTALID=1\">(6) #10093, PPVAP Cash Requirements Query (spartronics.com)</a>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13076",
+    "Title": "ESD Items Database",
+    "Description": "<div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">A database with segregates for ESD carts, ESD smocks, and maybe shelving. An Audit finding is requiring us to periodically verify the integrity of mobile carts (ground &lt; 1E9 ohms to ground) and ESD smock used for static control, not for personal grounding, (&lt;1E11 ohms sleeve-to-sleeve). The attachments show what information is too be recorded for mobile carts and for static control garments. I didn't make a list of fields for shelving but it would be the smallest table.<br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">There are other things in S20.20 that may eventually need to be periodically verified, so an ESD database should be scalable. I don't know if it is practical to have a database for every ESD item (one for carts, one for smocks, etc.) or to have one ESD database that can accomodate whatever we have to verify.<br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">Bottom line is: paper records get lost, Excel is not practical, the Calibration Database has little in common with ESD fields that we need to record.<br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">Can we do this and what is the development time? I can begin with paper records but need assurance that the data will be moved to a database. I might still have paper records for doing the first 50 carts in 2019, or else they are already lost.",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13085",
+    "Title": "F10 Duplicate line",
+    "Description": "<div style=\"box-sizing:border-box;outline:0px;font-family:Calibri, Arial, Helvetica, sans-serif;font-size:12pt;\">Engineering would like to track product returns by individual serial numbers. <div style=\"box-sizing:border-box;outline:0px;font-family:Calibri, Arial, Helvetica, sans-serif;font-size:12pt;\"><br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;font-family:Calibri, Arial, Helvetica, sans-serif;font-size:12pt;\">When 10 or more units are returned, our process is very time consuming. <div style=\"box-sizing:border-box;outline:0px;font-family:Calibri, Arial, Helvetica, sans-serif;font-size:12pt;\"><br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;font-family:Calibri, Arial, Helvetica, sans-serif;font-size:12pt;\"><br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;font-family:Calibri, Arial, Helvetica, sans-serif;font-size:12pt;\">F10 duplicates the line. <div style=\"box-sizing:border-box;outline:0px;font-family:Calibri, Arial, Helvetica, sans-serif;font-size:12pt;\">I would like to know if a short cut could be created for line duplication which <div style=\"box-sizing:border-box;outline:0px;font-family:Calibri, Arial, Helvetica, sans-serif;font-size:12pt;\">includes the customer incident #, quote date, quote price, cust PO, CON and reported failure? <div style=\"box-sizing:border-box;outline:0px;font-family:Calibri, Arial, Helvetica, sans-serif;font-size:12pt;\"><br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;font-family:Calibri, Arial, Helvetica, sans-serif;font-size:12pt;\">thank you, <div style=\"box-sizing:border-box;outline:0px;font-family:Calibri, Arial, Helvetica, sans-serif;font-size:12pt;\">Darrell <div style=\"box-sizing:border-box;outline:0px;font-family:Calibri, Arial, Helvetica, sans-serif;font-size:12pt;\"> <div style=\"box-sizing:border-box;outline:0px;font-family:Calibri, Arial, Helvetica, sans-serif;font-size:12pt;\"><a href=\"https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=12570\">#12570, RMAs R124254 &amp; R124255 from Bld 1 to Bld 2 (spartronics.com)</a>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13254",
+    "Title": "At Risk Report Changes for Supply Chain",
+    "Description": "User story:  Impact  Severity  Dev change  C / B",
+    "Repo": "AtRiskReports",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13255",
+    "Title": "Xray loader upload issue",
+    "Description": "<span>From Bill Ely</span> <span></span> <span>Background - XRF (Xray Fluorescence) readings are exported to the DMR System via a &quot;XRF Loading&quot; program identified by the RR#, the unique receiving number assigned from Macola when the material is received in. The RR#'s in Macola are sequentially assigned from 1 - 999999. Primus reached 999999 several years ago and the sequence restarted at RR# 000001. The DMR System data was archived to prevent repeat RR# from corrupting the historical data. </span>Problem - For the XRF loading program, the repeat RR#'s are now appearing under unintentional part numbers. For example, RR#'s 51622600 and 51642800 were originally received in 2009 but the readings are now showing up under circuit board part numbers that do not require XRF measurements but have the same RR#.  <span>I would suggest archiving the XRF data but providing a means to view the original data - perhaps in the DMR Archive Program. </span> <span></span> <a href=\"https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=13556\">ManageEngine ServiceDesk Plus (spartronics.com)</a>   Xray loader issue",
+    "Repo": "DMRSystem",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13256",
+    "Title": "Supplier portal Quarters",
+    "Description": "<a href=\"https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=12905\">ManageEngine ServiceDesk Plus (spartronics.com)</a>  <span style=\"color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;display:inline !important;\">Please change the frequency of the supplier scorecards to quarterly instead of monthly.</span> <span style=\"color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;display:inline !important;\"></span> Current report has columns for monthly.  &quot;Quarterly approach has more meaningful data than monthly approach&quot; - Chris T.  &quot;match other sites reports.&quot; namely inonet  12 make it 4. columns.  Last 12 months is fine.  Want to change it to a quarterly to make it meaningful data.  Not interested in an extract to make own data.",
+    "Repo": "DMRSystem",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13261",
+    "Title": "Intranet Shutdown archive - new report ok if people can pull up data",
+    "Description": "<p>Scope what is still needed: </p><p>Who still has access?SMT still uses it for change notices that are still in effect? </p><p>Engineering/Quality/Test still use it for Deviations. </p><p>Sept 22 on in Arena. </p><p>What is still needed? </p><p>ECOs, ED, historical data quality alerts (7 years ) </p><p>Test uses for test procedures (not all uploaded), and TECNs </p><p>How often? </p><p>other departments potentially once a day. </p><p>For how long? </p><p>unknown potentially forever if no ECO happens </p><p> </p><p>Figure out how to export: </p><p>dump tables store on P drive. </p><p>actual documents where? </p><div style=\"margin-top:14px;margin-bottom:14px;\"><img src=\"https://dev.azure.com/Spartronics/d3635d32-60cf-4ce3-81b9-091acf783be8/_apis/wit/attachments/f0e7a534-05eb-492f-935d-275d308b237f?fileName=image.png\" alt=Image> <p>How complex the table structure? </p><p>not very: </p><p>tables </p><div style=\"margin-top:14px;margin-bottom:14px;\"><img src=\"https://dev.azure.com/Spartronics/d3635d32-60cf-4ce3-81b9-091acf783be8/_apis/wit/attachments/8c79f13e-4563-4e59-874c-d5a070c52d3e?fileName=image.png\" alt=Image> <p>what do they search by? </p>item number.",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13269",
+    "Title": "CFE Program new field",
+    "Description": "<div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">Program names (Customer names) in CFE Database are sometimes no longer correct. Program Managers often need a list of that a customer's equipment at Williamsport. Since it is not always clear which division of a corporation is the correct program, we need to see a list of existing choices. There seems to be no way to send a list to a program manager or engineer. The only way I know to make the list appear is to click on ADD CFE and pull down the PROGRAM menu. I cannot make snips of the list because it disappears. There may be a way to easily list them and if so, I need to be instructed. Otherwise please make it a new feature. Thanks<br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\"><br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">Example of the difficulty: Goodrich has 4 menu items and is somehow associated with Kidde, UTAS, and Collins. To clarify who owns what, people need to see all the availble choices. I would like to send the complete list to associated Program Managers to see what needs to be renamed, merged, added, or deleted.<br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\"><br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">How can the list of PROGRAMS be sent in a file without typing every one?<br style=\"box-sizing:border-box;outline:0px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\">Thanks <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\"> <div style=\"box-sizing:border-box;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;\"><a href=\"https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=15024\">#15024, Add PRODUCTS field to CFE Database. (spartronics.com)</a>",
+    "Repo": "CfeDatabase",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13296",
+    "Title": "GitHub Build server setup",
+    "Description": "",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13236",
+    "Title": "Remove SO from reports",
+    "Description": "<span style=\"color:rgb(226, 226, 226);font-family:Roboto, Arial;font-size:13px;background-color:rgb(18, 18, 18);display:inline !important;\">please remove &quot;Shop Order&quot; field from print window.</span> <span style=\"color:rgb(226, 226, 226);font-family:Roboto, Arial;font-size:13px;background-color:rgb(18, 18, 18);display:inline !important;\"></span> <a href=\"https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=13699\">(5) ManageEngine ServiceDesk Plus (spartronics.com)</a>",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13274",
+    "Title": "XRF Readings Wrong - Repeat RR Numbers",
+    "Description": "<span>Background - XRF (Xray Fluorescence) readings are exported to the DMR System via a &quot;XRF Loading&quot; program identified by the RR#, the unique receiving number assigned from Macola when the material is received in. The RR#'s in Macola are sequentially assigned from 1 - 999999. Primus reached 999999 several years ago and the sequence restarted at RR# 000001. The DMR System data was archived to prevent repeat RR# from corrupting the historical data. </span>Problem - For the XRF loading program, the repeat RR#'s are now appearing under unintentional part numbers. For example, RR#'s 51622600 and 51642800 were originally received in 2009 but the readings are now showing up under circuit board part numbers that do not require XRF measurements but have the same RR#.  <span>I would suggest archiving the XRF data but providing a means to view the original data - perhaps in the DMR Archive Program. </span> <span></span> <span><a href=\"https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=13556\">(12) #13556, XRF Readings Wrong - Repeat RR Numbers (spartronics.com)</a></span>",
+    "Repo": "DMRSystem",
+    "AssignedTo": "mikethemerchant"
+  },
+  {
+    "ID": "13308",
+    "Title": "SmtReels Find oib issues",
+    "Description": "",
+    "Repo": "WptDevelopment",
+    "AssignedTo": "mikethemerchant"
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "id": "1",
+    "repo": "bkvReportServer",
+    "Title": "D365 Environment save UAT from both projects.",
+    "Description": "<p>How can we preserve the UAT environment before we repurpose the San Francisco hardware? </p><p>At a later date we &quot;might&quot; need to put it on a box for export import into new instance of D365. </p><p>LGN TCT project: </p><p><a href=https://ax.d365erp.uat.spartronics.com/namespaces/AXSF/?cmp=DAT&amp;mi=DefaultDashboard title=https://ax.d365erp.uat.spartronics.com/namespaces/axsf/?cmp=dat&amp;mi=defaultdashboard>https://ax.d365erp.uat.spartronics.com/namespaces/AXSF/?cmp=DAT&amp;mi=DefaultDashboard</a> </p><p>BKV VTN project: </p><p><a href=https://spartronics-olduataf42dd59b61d7b9adevaos.axcloud.dynamics.com/?cmp=BKV&amp;mi=DefaultDashboard title=https://spartronics-olduataf42dd59b61d7b9adevaos.axcloud.dynamics.com/?cmp=bkv&amp;mi=defaultdashboard>https://spartronics-olduataf42dd59b61d7b9adevaos.axcloud.dynamics.com/?cmp=BKV&amp;mi=DefaultDashboard</a> </p><p>Looking to be able to bring back up at a later date the config and database in a dev box for reference. </p><p>Help desk link:;<a href=https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=16717>#16717, D365 Environment save UAT from both projects. (spartronics.com)</a> </p> <br>",
+    "Assigned To": "mikethemerchant"
+  },
+  {
+    "id": "2",
+    "repo": "bkvReportServer",
+    "Title": "More Sparton logo removal",
+    "Description": "<p style=box-sizing:border-box;color:rgb(226, 226, 226);margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;background-color:rgb(18, 18, 18);><span style=box-sizing:border-box;outline:0px;font-size:12pt;>Hello IT:</span> </p><p style=box-sizing:border-box;color:rgb(226, 226, 226);margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;background-color:rgb(18, 18, 18);><span style=box-sizing:border-box;outline:0px;font-size:12pt;>;</span> </p><p style=box-sizing:border-box;color:rgb(226, 226, 226);margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;background-color:rgb(18, 18, 18);><span style=box-sizing:border-box;outline:0px;font-size:12pt;color:rgb(31, 73, 125);>Please remove the Sparton logo from the AX PRD - RPT-029b report.</span> </p><p style=box-sizing:border-box;color:rgb(226, 226, 226);margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;background-color:rgb(18, 18, 18);><span style=box-sizing:border-box;outline:0px;font-size:12pt;color:rgb(31, 73, 125);>;</span> </p><p style=box-sizing:border-box;color:rgb(226, 226, 226);margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;background-color:rgb(18, 18, 18);><span style=box-sizing:border-box;outline:0px;font-size:12pt;color:rgb(31, 73, 125);>Thank you,</span> </p><br>",
+    "Assigned To": "mikethemerchant"
+  },
+  {
+    "id": "3",
+    "repo": "bkvReportServer",
+    "Title": "Research 2 Locking procs",
+    "Description": "<p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;margin-bottom:12.0pt;><b><span style=font-family:&quot;Cambria&quot;,serif;color:red;>information.</span></b><span style=font-size:11.0pt;> </span><span style=font-size:11.0pt;></span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>Hi Everyone,</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>;</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>5 incidents of long process\nblocking occurred on ELKPRDSQLCLUS1 between 9 PM CST yesterday and 5 AM CST\ntoday. The chart below shows culprit processes (responsible for blocking) as\nthick bars and victim processes (which were blocked by culprits) as thin bars.\nThere were 5 culprits.</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>All of these processes\n(culprits and victims) came from Microsoft Dynamics AX running on host servers\nELKPRDAX1, ELKPRDAX2, and ELKPRDAX3. </span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>In every incident, the\nproblem was on the application side: the culprit process went idle without\ncommitting the last transaction, which resulted in the culprit holding locks on\ntables it had changed earlier, even through it wasn’t running any queries. This\nhappens when the application executes BEGIN TRANSACTION, then changes data in\ntables through INSER/UPDATE/DELETE queries, and never executes COMMIT\nTRANSACTION or ROLLBACK TRANSACTION. This is a bug in the application that it\nallows such scenario and doesn’t have any safety process to check for such\nabandoned processes and terminate them (which causes a rollback and releases\nlocks).</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>;</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>In incidents 1, 4, and 5,\nblocking occurred on the table [AX2009_SPARTON_PRD].[dbo].[REQPLAN] (i.e. the\nculprit process was holding an exclusive lock on that table while sitting idle,\nwhile victim processes were trying to access the table and were blocked).</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>In incidents 2 and 3,\nblocking occurred on the table [AX2009_SPARTON_PRD].[dbo].[SMMTRANSLOG].</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>;</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>This is an application\nproblem that can’t be fixed from the SQL Server side. If you like, I can\nimplement auto-killing of blocker processes after they cause this problem for a\ncertain number of minutes, which isn’t a cure for the root cause, but a\npain-killer. </span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>;</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;><img width=1057 height=805 style=height:8.385in;width:11.01in;></span><span style=font-size:11.0pt;></span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>;</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>Thanks,</span><span style=font-size:11.0pt;></span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>Andrew</span><span style=font-size:11.0pt;></span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>708-609-8783</span><span style=font-size:11.0pt;></span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>;</span> </p><br>",
+    "Assigned To": "mikethemerchant"
+  },
+  {
+    "id": "4",
+    "repo": "bkvReportServer",
+    "Title": "Report Needed - RPT-017 PO Receipts new column: Need to add GR number",
+    "Description": "<p style=box-sizing:border-box;margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;><b style=box-sizing:border-box;font-weight:bold;outline:0px;>IT Team,</b><br style=box-sizing:border-box;outline:0px;> </p><p style=box-sizing:border-box;margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;>;;; We have a large program that requires a custom report be generated for them on a weekly basis.<br style=box-sizing:border-box;outline:0px;> </p><p style=box-sizing:border-box;margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;>We were hoping you could assist with the following request<br style=box-sizing:border-box;outline:0px;> </p><ol style=box-sizing:border-box;margin-top:0in;margin-bottom:9px;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;><li style=box-sizing:border-box;outline:0px;color:red;margin-left:0in;>Report RPT-017 PO Receipts – Need to add GR number (Batch Number) and date code<br style=box-sizing:border-box;outline:0px;> </li> </ol><p style=box-sizing:border-box;margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;>;<br style=box-sizing:border-box;outline:0px;> </p><p style=box-sizing:border-box;margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;>Can you please advise if you are able to add these fields to this existing report?<br style=box-sizing:border-box;outline:0px;> </p><p style=box-sizing:border-box;margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;>;<br style=box-sizing:border-box;outline:0px;> </p><p style=box-sizing:border-box;margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;>Info requested is circled below for reference </p> <br> <a href=https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=11392>(1) ManageEngine ServiceDesk Plus (spartronics.com)</a><br>",
+    "Assigned To": "mikethemerchant"
+  },
+  {
+    "id": "5",
+    "repo": "inoScript",
+    "Title": "CUI operator handling",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "6",
+    "repo": "inoScript",
+    "Title": "SoDash - Views not showing updated information",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "7",
+    "repo": "inoScript",
+    "Title": "Errors Continue",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "8",
+    "repo": "inoScript",
+    "Title": "issue in COM",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "9",
+    "repo": "inoScript",
+    "Title": "Loleta Error",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "10",
+    "repo": "inoScript",
+    "Title": "Serial not at your site.",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "11",
+    "repo": "inoScript",
+    "Title": "Need View Created for RIR Associated Files",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "12",
+    "repo": "inoScript",
+    "Title": "Try to add SNs, get 1 more than we want",
+    "Description": "Getting duplicate entries <br> Requester: Jim",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "13",
+    "repo": "inoScript",
+    "Title": "Inonet will change the ship schedule",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "14",
+    "repo": "inoScript",
+    "Title": "Not able to enter information into com Disposition",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "15",
+    "repo": "inoScript",
+    "Title": "Run Ready Checklist Is Not Displayed",
+    "Description": "Bernnan Bear; <br> <br>",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "16",
+    "repo": "inoScript",
+    "Title": "Spartronics or Inovar Customer",
+    "Description": "She cant see Spartronics as manufacturer;;",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "17",
+    "repo": "inoScript",
+    "Title": "Title",
+    "Description": "desc",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "18",
+    "repo": "inoScript",
+    "Title": "WO 95987 - Scrap Quantity Wrong",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "19",
+    "repo": "inoScript",
+    "Title": "Factory Logix is NOT a routing",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "20",
+    "repo": "inoScript",
+    "Title": "unable to load page for hydroaire 93-91807-00, page times out",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "21",
+    "repo": "inoScript",
+    "Title": "The system would not let me generate a Quality Alert",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "22",
+    "repo": "inoScript",
+    "Title": "WO 96356 has wrong WO number",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "23",
+    "repo": "inoScript",
+    "Title": "I am unable to dispose of an asset ID due to the location being locked",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "24",
+    "repo": "inoScript",
+    "Title": "Need access to be able to create new assets",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "25",
+    "repo": "inoScript",
+    "Title": "MANEX.dbo.rptInvtValuation error",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "26",
+    "repo": "inoScript",
+    "Title": "I do not have the ability to add a asset into the database",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "27",
+    "repo": "inoScript",
+    "Title": "no se guarda la informacion.",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "28",
+    "repo": "inoScript",
+    "Title": "Boards not Transfering",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "29",
+    "repo": "inoScript",
+    "Title": "Boards are scanning but not transferring to the next work center",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "30",
+    "repo": "inoScript",
+    "Title": "WO 94078 - MRB Scrap Record not Correct",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "31",
+    "repo": "inoScript",
+    "Title": "Our inonet is down and we cannot scan out boards",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "32",
+    "repo": "inoScript",
+    "Title": "WO 89445 - MRB Scrap Records not Correct",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "33",
+    "repo": "inoScript",
+    "Title": "We have 17 i3 Units on Functional test that cant be transferred to FGR",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "34",
+    "repo": "inoScript",
+    "Title": "Date automatic change - bug",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "35",
+    "repo": "inoScript",
+    "Title": "When selecting + button to add documents to an NCMR error occors",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "36",
+    "repo": "inoScript",
+    "Title": "WO 92365 - Released to Wrong Site",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "37",
+    "repo": "inoScript",
+    "Title": "Quote NRE page error out on Q#s 20230320-544 20230320-572 20230308-1392 20230308-1522 20230308-1530 20230308-1605",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "38",
+    "repo": "inoScript",
+    "Title": "WoDash Timeout Errors",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "39",
+    "repo": "inoScript",
+    "Title": "The certificate of conformance has the wrong name on it",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "40",
+    "repo": "inoScript",
+    "Title": "Testing",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "41",
+    "repo": "inoScript",
+    "Title": "Not available documents",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "42",
+    "repo": "inoScript",
+    "Title": "Serial not at your site",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "43",
+    "repo": "inoScript",
+    "Title": "unable to create a new work order, timeout or server not responsive error",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "44",
+    "repo": "inoScript",
+    "Title": "I try to upload a file in QUOTE MAIN and it sends me an error",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "45",
+    "repo": "inoScript",
+    "Title": "Reports throws an error with valid serial numbers",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "46",
+    "repo": "inoScript",
+    "Title": "Testing again",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "47",
+    "repo": "inoScript",
+    "Title": "Testing",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "48",
+    "repo": "inoScript",
+    "Title": "Testing",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "49",
+    "repo": "inoScript",
+    "Title": "Track tab in unavailable to me",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "50",
+    "repo": "inoScript",
+    "Title": "When scanning RMS 90-4977422-1V we are encountering an error",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "51",
+    "repo": "inoScript",
+    "Title": "Error received in QSMS module",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "52",
+    "repo": "inoScript",
+    "Title": "Testing",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "53",
+    "repo": "inoScript",
+    "Title": "Inonet is not working...internet is working",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "54",
+    "repo": "inoScript",
+    "Title": "Cant upload/download files",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "55",
+    "repo": "inoScript",
+    "Title": "The buildbook module is not working",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "56",
+    "repo": "inoScript",
+    "Title": "PDF Upload >QSMS",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "57",
+    "repo": "inoScript",
+    "Title": "WO 95142 - Scrap Not Showing",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "58",
+    "repo": "inoScript",
+    "Title": "L3 button is generating an error message",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "59",
+    "repo": "inoScript",
+    "Title": "A few of our customers cannot access the drop down menu the “Select Module” of the customer portal. I can access this. We have some documents needed that are hinged on these accessing the Inonet Portal. Can you take a look at this for us?",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "60",
+    "repo": "inoScript",
+    "Title": "THe L3 stack feature is not working correctly",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "61",
+    "repo": "inoScript",
+    "Title": "Scrap Record not Correct",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "62",
+    "repo": "inoScript",
+    "Title": "Can not view documents in Assembly Dashboard",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "63",
+    "repo": "inoScript",
+    "Title": "Can not see planning contract reviews",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "64",
+    "repo": "inoScript",
+    "Title": "At the end of day we facility ship. Try to send the email and we get this error attached",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "65",
+    "repo": "inoScript",
+    "Title": "boards will not scan through shop floor randomly throughout the day without refreshing page several times or waiting up to 20 minutes",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "66",
+    "repo": "inoScript",
+    "Title": "everything about the cycle count page is too slow",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "67",
+    "repo": "inoScript",
+    "Title": "Shopfloor tracker running slow",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "68",
+    "repo": "inoScript",
+    "Title": "Customer Portal does not have shipped available for me to see",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "69",
+    "repo": "inoScript",
+    "Title": "Server error",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "70",
+    "repo": "inoScript",
+    "Title": "SFT will not pull up WI or PDNs",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "71",
+    "repo": "inoScript",
+    "Title": "Cannot return to SMT Manager.",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "72",
+    "repo": "inoScript",
+    "Title": "Cannot upload test reports to inonet",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "73",
+    "repo": "inoScript",
+    "Title": "Door Scans",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "74",
+    "repo": "inoScript",
+    "Title": "Manex Database stored procedure error",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "75",
+    "repo": "inoScript",
+    "Title": "When BOM is selected from released docs on a COM, it send me to assembly dashboard.",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "76",
+    "repo": "inoScript",
+    "Title": "Scrap Record needs Fixed to Close Work Order",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "77",
+    "repo": "inoScript",
+    "Title": "Unable to pass boards out of Factory Logix work center.",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "78",
+    "repo": "inoScript",
+    "Title": "Need Function to pull Serial Data into PowerBI Quicker",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "79",
+    "repo": "inoScript",
+    "Title": "Door scans not working after 11ppm last night",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "80",
+    "repo": "inoScript",
+    "Title": "Badge Scans",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "81",
+    "repo": "inoScript",
+    "Title": "Capacity Dashboard - Recalculate Not Working",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "82",
+    "repo": "inoScript",
+    "Title": "Test checkbox not working",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "83",
+    "repo": "inoScript",
+    "Title": "Door Scans",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "84",
+    "repo": "inoScript",
+    "Title": "Error when trying to add new manufacturer link",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "85",
+    "repo": "inoScript",
+    "Title": "Push to Manex duplicates lines, now has error code",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "86",
+    "repo": "inoScript",
+    "Title": "Shopfloor tracker functionality isnt working properly. Cant log defects.",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "87",
+    "repo": "inoScript",
+    "Title": "Build Books are not acting normally",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "88",
+    "repo": "inoScript",
+    "Title": "I.T Main",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "89",
+    "repo": "inoScript",
+    "Title": "Trying to resurrect SN",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "90",
+    "repo": "inoScript",
+    "Title": "unexpected error",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "91",
+    "repo": "inoScript",
+    "Title": "The system does not allow closing the cycle count, it is blocked",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "92",
+    "repo": "inoScript",
+    "Title": "I need rights to be able to over ride the greater than 5 work order rule that is locking work order 95142 form being serialized.",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "93",
+    "repo": "inoScript",
+    "Title": "Problems with the IT Main page.",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "94",
+    "repo": "inoScript",
+    "Title": "Another Execution Timeoutxgxcv",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "95",
+    "repo": "inoScript",
+    "Title": "InoNet refusing to send 50% of scans",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "96",
+    "repo": "inoScript",
+    "Title": "Review tab isnt working",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "97",
+    "repo": "inoScript",
+    "Title": "RMA unit stuck in an infinite loop",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "98",
+    "repo": "inoScript",
+    "Title": "GUIDs stucked on checkout",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "99",
+    "repo": "inoScript",
+    "Title": "source inspection was removed from the list of available routings but is still in the routing for this assembly, work order 95879",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  },
+  {
+    "id": "100",
+    "repo": "inoScript",
+    "Title": "Box lost in system",
+    "Description": "",
+    "Assigned To": "JRLSLLC"
+  }
+]

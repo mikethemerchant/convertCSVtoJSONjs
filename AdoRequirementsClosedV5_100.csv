@@ -1,0 +1,124 @@
+﻿id,repo,Title,Description,Assigned To
+1,bkvReportServer,D365 Environment save UAT from both projects.,"<p>How can we preserve the UAT environment before we repurpose the San Francisco hardware? </p><p>At a later date we &quot;might&quot; need to put it on a box for export import into new instance of D365. </p><p>LGN TCT project: </p><p><a href=https://ax.d365erp.uat.spartronics.com/namespaces/AXSF/?cmp=DAT&amp;mi=DefaultDashboard title=https://ax.d365erp.uat.spartronics.com/namespaces/axsf/?cmp=dat&amp;mi=defaultdashboard>https://ax.d365erp.uat.spartronics.com/namespaces/AXSF/?cmp=DAT&amp;mi=DefaultDashboard</a> </p><p>BKV VTN project: </p><p><a href=https://spartronics-olduataf42dd59b61d7b9adevaos.axcloud.dynamics.com/?cmp=BKV&amp;mi=DefaultDashboard title=https://spartronics-olduataf42dd59b61d7b9adevaos.axcloud.dynamics.com/?cmp=bkv&amp;mi=defaultdashboard>https://spartronics-olduataf42dd59b61d7b9adevaos.axcloud.dynamics.com/?cmp=BKV&amp;mi=DefaultDashboard</a> </p><p>Looking to be able to bring back up at a later date the config and database in a dev box for reference. </p><p>Help desk link:;<a href=https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=16717>#16717, D365 Environment save UAT from both projects. (spartronics.com)</a> </p> <br>",mikethemerchant
+2,bkvReportServer,More Sparton logo removal,"<p style=box-sizing:border-box;color:rgb(226, 226, 226);margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;background-color:rgb(18, 18, 18);><span style=box-sizing:border-box;outline:0px;font-size:12pt;>Hello IT:</span> </p><p style=box-sizing:border-box;color:rgb(226, 226, 226);margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;background-color:rgb(18, 18, 18);><span style=box-sizing:border-box;outline:0px;font-size:12pt;>;</span> </p><p style=box-sizing:border-box;color:rgb(226, 226, 226);margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;background-color:rgb(18, 18, 18);><span style=box-sizing:border-box;outline:0px;font-size:12pt;color:rgb(31, 73, 125);>Please remove the Sparton logo from the AX PRD - RPT-029b report.</span> </p><p style=box-sizing:border-box;color:rgb(226, 226, 226);margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;background-color:rgb(18, 18, 18);><span style=box-sizing:border-box;outline:0px;font-size:12pt;color:rgb(31, 73, 125);>;</span> </p><p style=box-sizing:border-box;color:rgb(226, 226, 226);margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;background-color:rgb(18, 18, 18);><span style=box-sizing:border-box;outline:0px;font-size:12pt;color:rgb(31, 73, 125);>Thank you,</span> </p><br> ",mikethemerchant
+3,bkvReportServer,Research 2 Locking procs,"<p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;margin-bottom:12.0pt;><b><span style=font-family:&quot;Cambria&quot;,serif;color:red;>information.</span></b><span style=font-size:11.0pt;> </span><span style=font-size:11.0pt;></span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>Hi Everyone,</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>;</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>5 incidents of long process
+blocking occurred on ELKPRDSQLCLUS1 between 9 PM CST yesterday and 5 AM CST
+today. The chart below shows culprit processes (responsible for blocking) as
+thick bars and victim processes (which were blocked by culprits) as thin bars.
+There were 5 culprits.</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>All of these processes
+(culprits and victims) came from Microsoft Dynamics AX running on host servers
+ELKPRDAX1, ELKPRDAX2, and ELKPRDAX3. </span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>In every incident, the
+problem was on the application side: the culprit process went idle without
+committing the last transaction, which resulted in the culprit holding locks on
+tables it had changed earlier, even through it wasn’t running any queries. This
+happens when the application executes BEGIN TRANSACTION, then changes data in
+tables through INSER/UPDATE/DELETE queries, and never executes COMMIT
+TRANSACTION or ROLLBACK TRANSACTION. This is a bug in the application that it
+allows such scenario and doesn’t have any safety process to check for such
+abandoned processes and terminate them (which causes a rollback and releases
+locks).</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>;</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>In incidents 1, 4, and 5,
+blocking occurred on the table [AX2009_SPARTON_PRD].[dbo].[REQPLAN] (i.e. the
+culprit process was holding an exclusive lock on that table while sitting idle,
+while victim processes were trying to access the table and were blocked).</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>In incidents 2 and 3,
+blocking occurred on the table [AX2009_SPARTON_PRD].[dbo].[SMMTRANSLOG].</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>;</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>This is an application
+problem that can’t be fixed from the SQL Server side. If you like, I can
+implement auto-killing of blocker processes after they cause this problem for a
+certain number of minutes, which isn’t a cure for the root cause, but a
+pain-killer. </span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>;</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;><img width=1057 height=805 style=height:8.385in;width:11.01in;></span><span style=font-size:11.0pt;></span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>;</span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>Thanks,</span><span style=font-size:11.0pt;></span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>Andrew</span><span style=font-size:11.0pt;></span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>708-609-8783</span><span style=font-size:11.0pt;></span> </p><p style=margin:0in;font-size:10pt;font-family:Calibri, sans-serif;><span style=font-size:11.0pt;>;</span> </p><br> ",mikethemerchant
+4,bkvReportServer,Report Needed - RPT-017 PO Receipts new column: Need to add GR number,"<p style=box-sizing:border-box;margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;><b style=box-sizing:border-box;font-weight:bold;outline:0px;>IT Team,</b><br style=box-sizing:border-box;outline:0px;> </p><p style=box-sizing:border-box;margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;>;;; We have a large program that requires a custom report be generated for them on a weekly basis.<br style=box-sizing:border-box;outline:0px;> </p><p style=box-sizing:border-box;margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;>We were hoping you could assist with the following request<br style=box-sizing:border-box;outline:0px;> </p><ol style=box-sizing:border-box;margin-top:0in;margin-bottom:9px;outline:0px;color:rgb(17, 17, 17);font-family:Arial, Verdana;font-size:13px;><li style=box-sizing:border-box;outline:0px;color:red;margin-left:0in;>Report RPT-017 PO Receipts – Need to add GR number (Batch Number) and date code<br style=box-sizing:border-box;outline:0px;> </li> </ol><p style=box-sizing:border-box;margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;>;<br style=box-sizing:border-box;outline:0px;> </p><p style=box-sizing:border-box;margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;>Can you please advise if you are able to add these fields to this existing report?<br style=box-sizing:border-box;outline:0px;> </p><p style=box-sizing:border-box;margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;>;<br style=box-sizing:border-box;outline:0px;> </p><p style=box-sizing:border-box;margin:0px;outline:0px;font-family:Arial, Verdana;font-size:13px;>Info requested is circled below for reference </p> <br> <a href=https://servicedesk.spartronics.com/WorkOrder.do?woMode=viewWO&amp;woID=11392>(1) ManageEngine ServiceDesk Plus (spartronics.com)</a><br> ",mikethemerchant
+5,inoScript,CUI operator handling,,JRLSLLC
+6,inoScript,SoDash - Views not showing updated information,,JRLSLLC
+7,inoScript,Errors Continue,,JRLSLLC
+8,inoScript,issue in COM,,JRLSLLC
+9,inoScript,Loleta Error,,JRLSLLC
+10,inoScript,Serial not at your site.,,JRLSLLC
+11,inoScript,Need View Created for RIR Associated Files,,JRLSLLC
+12,inoScript,"Try to add SNs, get 1 more than we want",Getting duplicate entries <br> Requester: Jim ,JRLSLLC
+13,inoScript,Inonet will change the ship schedule,,JRLSLLC
+14,inoScript,Not able to enter information into com Disposition,,JRLSLLC
+15,inoScript,Run Ready Checklist Is Not Displayed,Bernnan Bear; <br> <br> ,JRLSLLC
+16,inoScript,Spartronics or Inovar Customer,She cant see Spartronics as manufacturer;; ,JRLSLLC
+17,inoScript,Title,desc ,JRLSLLC
+18,inoScript,WO 95987 - Scrap Quantity Wrong,,JRLSLLC
+19,inoScript,Factory Logix is NOT a routing,,JRLSLLC
+20,inoScript,"unable to load page for hydroaire 93-91807-00, page times out",,JRLSLLC
+21,inoScript,The system would not let me generate a Quality Alert,,JRLSLLC
+22,inoScript,WO 96356 has wrong WO number,,JRLSLLC
+23,inoScript,I am unable to dispose of an asset ID due to the location being locked,,JRLSLLC
+24,inoScript,Need access to be able to create new assets,,JRLSLLC
+25,inoScript,MANEX.dbo.rptInvtValuation error,,JRLSLLC
+26,inoScript,I do not have the ability to add a asset into the database,,JRLSLLC
+27,inoScript,no se guarda la informacion.,,JRLSLLC
+28,inoScript,Boards not Transfering,,JRLSLLC
+29,inoScript,Boards are scanning but not transferring to the next work center,,JRLSLLC
+30,inoScript,WO 94078 - MRB Scrap Record not Correct,,JRLSLLC
+31,inoScript,Our inonet is down and we cannot scan out boards,,JRLSLLC
+32,inoScript,WO 89445 - MRB Scrap Records not Correct,,JRLSLLC
+33,inoScript,We have 17 i3 Units on Functional test that cant be transferred to FGR,,JRLSLLC
+34,inoScript,Date automatic change - bug,,JRLSLLC
+35,inoScript,When selecting + button to add documents to an NCMR error occors,,JRLSLLC
+36,inoScript,WO 92365 - Released to Wrong Site,,JRLSLLC
+37,inoScript,Quote NRE page error out on Q#s 20230320-544 20230320-572 20230308-1392 20230308-1522 20230308-1530 20230308-1605,,JRLSLLC
+38,inoScript,WoDash Timeout Errors,,JRLSLLC
+39,inoScript,The certificate of conformance has the wrong name on it,,JRLSLLC
+40,inoScript,Testing,,JRLSLLC
+41,inoScript,Not available documents,,JRLSLLC
+42,inoScript,Serial not at your site,,JRLSLLC
+43,inoScript,"unable to create a new work order, timeout or server not responsive error",,JRLSLLC
+44,inoScript,I try to upload a file in QUOTE MAIN and it sends me an error,,JRLSLLC
+45,inoScript,Reports throws an error with valid serial numbers,,JRLSLLC
+46,inoScript,Testing again,,JRLSLLC
+47,inoScript,Testing,,JRLSLLC
+48,inoScript,Testing,,JRLSLLC
+49,inoScript,Track tab in unavailable to me,,JRLSLLC
+50,inoScript,When scanning RMS 90-4977422-1V we are encountering an error,,JRLSLLC
+51,inoScript,Error received in QSMS module,,JRLSLLC
+52,inoScript,Testing,,JRLSLLC
+53,inoScript,Inonet is not working...internet is working,,JRLSLLC
+54,inoScript,Cant upload/download files,,JRLSLLC
+55,inoScript,The buildbook module is not working,,JRLSLLC
+56,inoScript,PDF Upload >QSMS,,JRLSLLC
+57,inoScript,WO 95142 - Scrap Not Showing,,JRLSLLC
+58,inoScript,L3 button is generating an error message,,JRLSLLC
+59,inoScript,A few of our customers cannot access the drop down menu the “Select Module” of the customer portal. I can access this. We have some documents needed that are hinged on these accessing the Inonet Portal. Can you take a look at this for us?,,JRLSLLC
+60,inoScript,THe L3 stack feature is not working correctly,,JRLSLLC
+61,inoScript,Scrap Record not Correct,,JRLSLLC
+62,inoScript,Can not view documents in Assembly Dashboard,,JRLSLLC
+63,inoScript,Can not see planning contract reviews,,JRLSLLC
+64,inoScript,At the end of day we facility ship. Try to send the email and we get this error attached,,JRLSLLC
+65,inoScript,boards will not scan through shop floor randomly throughout the day without refreshing page several times or waiting up to 20 minutes,,JRLSLLC
+66,inoScript,everything about the cycle count page is too slow,,JRLSLLC
+67,inoScript,Shopfloor tracker running slow,,JRLSLLC
+68,inoScript,Customer Portal does not have shipped available for me to see,,JRLSLLC
+69,inoScript,Server error,,JRLSLLC
+70,inoScript,SFT will not pull up WI or PDNs,,JRLSLLC
+71,inoScript,Cannot return to SMT Manager.,,JRLSLLC
+72,inoScript,Cannot upload test reports to inonet,,JRLSLLC
+73,inoScript,Door Scans,,JRLSLLC
+74,inoScript,Manex Database stored procedure error,,JRLSLLC
+75,inoScript,"When BOM is selected from released docs on a COM, it send me to assembly dashboard.",,JRLSLLC
+76,inoScript,Scrap Record needs Fixed to Close Work Order,,JRLSLLC
+77,inoScript,Unable to pass boards out of Factory Logix work center.,,JRLSLLC
+78,inoScript,Need Function to pull Serial Data into PowerBI Quicker,,JRLSLLC
+79,inoScript,Door scans not working after 11ppm last night,,JRLSLLC
+80,inoScript,Badge Scans,,JRLSLLC
+81,inoScript,Capacity Dashboard - Recalculate Not Working,,JRLSLLC
+82,inoScript,Test checkbox not working,,JRLSLLC
+83,inoScript,Door Scans,,JRLSLLC
+84,inoScript,Error when trying to add new manufacturer link,,JRLSLLC
+85,inoScript,"Push to Manex duplicates lines, now has error code",,JRLSLLC
+86,inoScript,Shopfloor tracker functionality isnt working properly. Cant log defects.,,JRLSLLC
+87,inoScript,Build Books are not acting normally,,JRLSLLC
+88,inoScript,I.T Main,,JRLSLLC
+89,inoScript,Trying to resurrect SN,,JRLSLLC
+90,inoScript,unexpected error,,JRLSLLC
+91,inoScript,"The system does not allow closing the cycle count, it is blocked",,JRLSLLC
+92,inoScript,I need rights to be able to over ride the greater than 5 work order rule that is locking work order 95142 form being serialized.,,JRLSLLC
+93,inoScript,Problems with the IT Main page.,,JRLSLLC
+94,inoScript,Another Execution Timeoutxgxcv,,JRLSLLC
+95,inoScript,InoNet refusing to send 50% of scans,,JRLSLLC
+96,inoScript,Review tab isnt working,,JRLSLLC
+97,inoScript,RMA unit stuck in an infinite loop,,JRLSLLC
+98,inoScript,GUIDs stucked on checkout,,JRLSLLC
+99,inoScript,"source inspection was removed from the list of available routings but is still in the routing for this assembly, work order 95879",,JRLSLLC
+100,inoScript,Box lost in system,,JRLSLLC
