@@ -3,7 +3,7 @@
 
 // npm install csvtojson
 
-const csvFilePath = './AdoRequirementsClosedV4.csv';
+const csvFilePath = './RequirementsNotClosed.csv';
 const csv = require('csvtojson');
 const fs = require('fs');
 
@@ -11,6 +11,6 @@ csv()
     .fromFile(csvFilePath)
     .then((jsonObj) => {
         console.log(jsonObj);
-        fs.writeFileSync('AdoRequirementsClosedV4.json', JSON.stringify(jsonObj, null, 2));
+        fs.writeFileSync('RequirementsNotClosed.json', JSON.stringify(jsonObj, null, 2));
     });
 
